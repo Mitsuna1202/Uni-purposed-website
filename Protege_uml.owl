@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tout_ptit/ontologies/2026/1/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/tout_ptit/ontologies/2026/1/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology_practice="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#">
+    <owl:Ontology rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Studies -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Studies">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Teaches -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Teaches">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#first_name -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#first_name">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#last_name -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#last_name">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#moduleID -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#moduleID">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#staffID -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#staffID">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studentID -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studentID">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer1">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <ontology_practice:Teaches rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101"/>
+        <ontology_practice:first_name>Tonio</ontology_practice:first_name>
+        <ontology_practice:last_name>Raguel</ontology_practice:last_name>
+        <ontology_practice:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</ontology_practice:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer2">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <ontology_practice:Teaches rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102"/>
+        <ontology_practice:Teaches rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201"/>
+        <ontology_practice:first_name>Manes</ontology_practice:first_name>
+        <ontology_practice:last_name>Kimber</ontology_practice:last_name>
+        <ontology_practice:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</ontology_practice:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">201</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">202</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student1">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <ontology_practice:Studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201"/>
+        <ontology_practice:Studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202"/>
+        <ontology_practice:first_name>Kalani</ontology_practice:first_name>
+        <ontology_practice:last_name>Kenet</ontology_practice:last_name>
+        <ontology_practice:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</ontology_practice:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student2 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student2">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <ontology_practice:Studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101"/>
+        <ontology_practice:Studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102"/>
+        <ontology_practice:Studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202"/>
+        <ontology_practice:first_name>Wellington</ontology_practice:first_name>
+        <ontology_practice:last_name>Maya</ontology_practice:last_name>
+        <ontology_practice:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">002</ontology_practice:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
