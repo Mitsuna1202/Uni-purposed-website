@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tout_ptit/ontologies/2026/1/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/tout_ptit/ontologies/2026/1/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology_practice="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#">
+    <owl:Ontology rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl">
+        <rdfs:comment>An ontology practice for my assignment</rdfs:comment>
+        <rdfs:isDefinedBy>https://creativecommons.org/publicdomain/zero/1.0/</rdfs:isDefinedBy>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#isStudiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#isStudiedBy">
+        <owl:inverseOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studies"/>
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <rdfs:comment>A module is studied by a set of students</rdfs:comment>
+        <rdfs:label>is studied by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#isTaughtBy">
+        <owl:inverseOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#teaches"/>
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <rdfs:comment>A module is taught by one or several lecturer.</rdfs:comment>
+        <rdfs:label>is taught by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studies -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studies">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:comment>The action performed by students to devote time and attention to gaining knowledge about their chosen modules, especially by means of books.</rdfs:comment>
+        <rdfs:label>studies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#teaches -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#teaches">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:comment>Teachers impart knowledge to, or instruct, students as to how to do something in their chosen module.</rdfs:comment>
+        <rdfs:label>teaches</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#firstName -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#firstName">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>First name of a person</rdfs:comment>
+        <rdfs:label>First name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#lastName -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#lastName">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Last name of a person.</rdfs:comment>
+        <rdfs:label>Last name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#moduleID -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#moduleID">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Primary key of the module.</rdfs:comment>
+        <rdfs:label>Module ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#staffID -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#staffID">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Primary key of the lecturer.</rdfs:comment>
+        <rdfs:label>Staff ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studentID -->
+
+    <owl:DatatypeProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studentID">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Primary key of the student.</rdfs:comment>
+        <rdfs:label>Student ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:comment>Module about computer science.</rdfs:comment>
+        <rdfs:label>Computer Science Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:comment>A lecturer is a person who gives lectures for a module, especially as an occupation at a university or college of higher education.</rdfs:comment>
+        <rdfs:label>Lecturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:comment>Module about mathematics.</rdfs:comment>
+        <rdfs:label>Mathematic Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module">
+        <rdfs:comment>A module is a complete block with thematically defined results, given workload (credit points) and clear evaluation criteria. A module can consist of one or more courses and one or more examinations (credits and/or subject examinations).</rdfs:comment>
+        <rdfs:label>Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person">
+        <rdfs:comment>A person is a human being regarded as an individual.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:comment>A student is a person who is studying modules at a university or other place of higher education.</rdfs:comment>
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer1">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <ontology_practice:teaches rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101"/>
+        <ontology_practice:firstName>Tonio</ontology_practice:firstName>
+        <ontology_practice:lastName>Raguel</ontology_practice:lastName>
+        <ontology_practice:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</ontology_practice:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer2">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <ontology_practice:teaches rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102"/>
+        <ontology_practice:teaches rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201"/>
+        <ontology_practice:firstName>Manes</ontology_practice:firstName>
+        <ontology_practice:lastName>Kimber</ontology_practice:lastName>
+        <ontology_practice:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</ontology_practice:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">201</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule"/>
+        <ontology_practice:moduleID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">202</ontology_practice:moduleID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student1">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <ontology_practice:studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M201"/>
+        <ontology_practice:studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202"/>
+        <ontology_practice:firstName>Kalani</ontology_practice:firstName>
+        <ontology_practice:lastName>Kenet</ontology_practice:lastName>
+        <ontology_practice:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</ontology_practice:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student2 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student2">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <ontology_practice:studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS101"/>
+        <ontology_practice:studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CS102"/>
+        <ontology_practice:studies rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#M202"/>
+        <ontology_practice:firstName>Wellington</ontology_practice:firstName>
+        <ontology_practice:lastName>Maya</ontology_practice:lastName>
+        <ontology_practice:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">002</ontology_practice:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
