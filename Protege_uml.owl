@@ -29,6 +29,7 @@
         <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
         <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
         <rdfs:comment>A module is studied by a set of students</rdfs:comment>
+        <rdfs:label>is studied by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -40,6 +41,7 @@
         <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
         <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
         <rdfs:comment>A module is taught by one or several lecturer.</rdfs:comment>
+        <rdfs:label>is taught by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -50,6 +52,7 @@
         <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
         <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
         <rdfs:comment>The action performed by students to devote time and attention to gaining knowledge about their chosen modules, especially by means of books.</rdfs:comment>
+        <rdfs:label>studies</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -60,6 +63,7 @@
         <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
         <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
         <rdfs:comment>Teachers impart knowledge to, or instruct, students as to how to do something in their chosen module.</rdfs:comment>
+        <rdfs:label>teaches</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -145,6 +149,7 @@
 
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#CSModule">
         <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:comment>Module about computer science.</rdfs:comment>
         <rdfs:label>Computer Science Module</rdfs:label>
     </owl:Class>
     
@@ -155,6 +160,7 @@
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer">
         <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
         <rdfs:comment>A lecturer is a person who gives lectures for a module, especially as an occupation at a university or college of higher education.</rdfs:comment>
+        <rdfs:label>Lecturer</rdfs:label>
     </owl:Class>
     
 
@@ -163,6 +169,7 @@
 
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#MathModule">
         <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
+        <rdfs:comment>Module about mathematics.</rdfs:comment>
         <rdfs:label>Mathematic Module</rdfs:label>
     </owl:Class>
     
@@ -172,6 +179,7 @@
 
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module">
         <rdfs:comment>A module is a complete block with thematically defined results, given workload (credit points) and clear evaluation criteria. A module can consist of one or more courses and one or more examinations (credits and/or subject examinations).</rdfs:comment>
+        <rdfs:label>Module</rdfs:label>
     </owl:Class>
     
 
@@ -180,6 +188,7 @@
 
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person">
         <rdfs:comment>A person is a human being regarded as an individual.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
@@ -189,6 +198,7 @@
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student">
         <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
         <rdfs:comment>A student is a person who is studying modules at a university or other place of higher education.</rdfs:comment>
+        <rdfs:label>Student</rdfs:label>
     </owl:Class>
     
 
