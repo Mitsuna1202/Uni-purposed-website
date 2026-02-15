@@ -194,21 +194,6 @@
     
 
 
-    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Non -->
-
-    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Non">
-        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#studies"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Module"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person -->
 
     <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person">
@@ -329,18 +314,6 @@
         <ontology_practice:firstName>Wellington</ontology_practice:firstName>
         <ontology_practice:lastName>Maya</ontology_practice:lastName>
         <ontology_practice:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">002</ontology_practice:studentID>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student3 -->
-
-    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student3">
-        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Non"/>
-        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
-        <ontology_practice:firstName>Luna</ontology_practice:firstName>
-        <ontology_practice:lastName>Tune</ontology_practice:lastName>
-        <ontology_practice:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">003</ontology_practice:studentID>
     </owl:NamedIndividual>
     
 
