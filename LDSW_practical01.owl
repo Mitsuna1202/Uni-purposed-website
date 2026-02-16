@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tout_ptit/ontologies/2026/1/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/tout_ptit/ontologies/2026/1/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology_practice="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#">
+    <owl:Ontology rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice1.owl">
+        <rdfs:comment>An ontology practice for my assignment</rdfs:comment>
+        <rdfs:isDefinedBy>https://creativecommons.org/publicdomain/zero/1.0/</rdfs:isDefinedBy>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#favoriteSportOf -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#favoriteSportOf">
+        <owl:inverseOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#favoriteSportOf"/>
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#FavoriteSport"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:comment>A sport is the favorite of a person</rdfs:comment>
+        <rdfs:label>favorite sport of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#hasFavoriteSport -->
+
+    <owl:ObjectProperty rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#hasFavoriteSport">
+        <rdfs:domain rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:range rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#FavoriteSport"/>
+        <rdfs:comment>A lecturer or a student have a favorite sport</rdfs:comment>
+        <rdfs:label>has favorite sport</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#FavoriteSport -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#FavoriteSport">
+        <rdfs:comment>An activity favored by a person</rdfs:comment>
+        <rdfs:label>Favorite Sport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#IndoorSport -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#IndoorSport">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#FavoriteSport"/>
+        <rdfs:comment>An activity happening inside a room</rdfs:comment>
+        <rdfs:label>Indoor Sport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:comment>A lecturer is a person who gives lectures for a module, especially as an occupation at a university or college of higher education.</rdfs:comment>
+        <rdfs:label>Lecturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#OutdoorSport -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#OutdoorSport">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#FavoriteSport"/>
+        <rdfs:comment>An activity outside a room</rdfs:comment>
+        <rdfs:label>Outdoor Sport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person">
+        <rdfs:comment>A person is a human being regarded as an individual.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student -->
+
+    <owl:Class rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student">
+        <rdfs:subClassOf rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Person"/>
+        <rdfs:comment>A student is a person who is studying modules at a university or other place of higher education.</rdfs:comment>
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer1">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+        <ontology_practice:hasFavoriteSport rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#TennisTable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Rugby -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Rugby">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#OutdoorSport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student1">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        <ontology_practice:hasFavoriteSport rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Rugby"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#TennisTable -->
+
+    <owl:NamedIndividual rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#TennisTable">
+        <rdf:type rdf:resource="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#IndoorSport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#IndoorSport"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Lecturer"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#OutdoorSport"/>
+            <rdf:Description rdf:about="https://canvas.utwente.nl/files/folder/users_87153/ontology_practice.owl#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
